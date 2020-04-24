@@ -7,6 +7,7 @@ import { exchange-rate } from './../src/currency-calculator.js';
 $(document).ready(function() {
   event.preventDefault();
   $('#calculate').click(function) {
+    let currencyToConvertTo = ;
     (async() => {
       let exchangeRate = new exchangeRate();
       const response = await exchangeRate.getUSDExchangeRate();
