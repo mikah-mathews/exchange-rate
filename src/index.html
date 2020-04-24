@@ -10,25 +10,26 @@
     <div class="jumbotron">
       <h1>Convert USD to another type of Money!</h1>
     </div>
-    <form id="currencyTo">
+    <form id="currencyCalculatorInput">
       <h3>What currency do you want to convert to?</h3>
-      <input type="radio" name="EUR" id="EUR">
-      <label for="EUR">Euro</label>
-      <input type="radio" name="GPB" id="GPB">
-      <label for="GBP">Pound Sterling</label>
-      <input type="radio" name="CAD" id="CAD">
-      <label for="CAD">Canadian Dollar</label>
-      <input type="radio" name="JPY" id="JPY">
-      <label for="JPY">Japanese Yen</label>
-      <input type="radio" name="TRY" id="TRY">
-      <label for="TRY">Turkish Lyra</label>
-    </form>
-    <form id="amountTo">
+      <div id="currencyTo">
+        <input type="radio" name="EUR" id="EUR">
+        <label for="EUR">Euro</label>
+        <input type="radio" name="GPB" id="GPB">
+        <label for="GBP">Pound Sterling</label>
+        <input type="radio" name="CAD" id="CAD">
+        <label for="CAD">Canadian Dollar</label>
+        <input type="radio" name="JPY" id="JPY">
+        <label for="JPY">Japanese Yen</label>
+        <input type="radio" name="TRY" id="TRY">
+        <label for="TRY">Turkish Lyra</label>
+      </div>
       <h3>How much do you want to convert? (min 1)</h3>
-      <input type="number" name="moneyAmount" id="moneyAmount" min="1" required>
-      <label for="moneyAmount">USD</label>
+      <div id="amountTo">
+        <input type="number" name="moneyAmount" id="moneyAmount" min="1" required>
+        <label for="moneyAmount">USD</label>
+      </div>
     </form>
-    
   </div>
 </body>
 </html>
