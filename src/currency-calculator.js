@@ -1,4 +1,4 @@
-export exchange-rate {
+export exchangeRate {
   async getUSDExchangeRate(){
     try {
       let response = await fetch(`https://prime.exchangerate-api.com/v5/${process.env.API_KEY}/latest/USD/`);
@@ -15,5 +15,7 @@ export exchange-rate {
      return false;
    }
   }
-
+  function howMany(userInput){
+    
+  }
 }
