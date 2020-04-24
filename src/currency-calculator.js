@@ -1,7 +1,7 @@
 export exchange-rate {
   async getUSDExchangeRate(){
     try {
-      let response = await fetch(`https://prime.exchangerate-api.com/v5/${process.env.API_KEY}/latest/USD`);
+      let response = await fetch(`https://prime.exchangerate-api.com/v5/${process.env.API_KEY}/latest/USD/`);
     }
     let jsonifiedResponse;
      if (response.ok && response.status === 200) {
@@ -15,4 +15,5 @@ export exchange-rate {
      return false;
    }
   }
+
 }
