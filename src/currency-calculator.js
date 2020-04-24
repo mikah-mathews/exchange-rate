@@ -15,7 +15,8 @@ export exchangeRate {
      return false;
    }
   }
-  function howMany(userInput){
-    
+  function howMany(userMoneyAmount, currencyToConvertTo){
+    let convertedMoney = userMoneyAmount * currencyToConvertTo;
+    return convertedMoney;
   }
 }
