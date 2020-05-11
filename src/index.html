@@ -13,15 +13,15 @@
     <form id="currencyCalculatorInput">
       <h3>What currency do you want to convert to?</h3>
       <div id="currencyTo">
-        <input type="radio" name="EUR" id="EUR">
+        <input type="radio" name="EUR" id="EUR" value="EUR">
         <label for="EUR">Euro</label>
-        <input type="radio" name="GPB" id="GPB">
+        <input type="radio" name="GPB" id="GPB" value="GPB">
         <label for="GBP">Pound Sterling</label>
-        <input type="radio" name="CAD" id="CAD">
+        <input type="radio" name="CAD" id="CAD" value="CAD">
         <label for="CAD">Canadian Dollar</label>
-        <input type="radio" name="JPY" id="JPY">
+        <input type="radio" name="JPY" id="JPY" value="JPY">
         <label for="JPY">Japanese Yen</label>
-        <input type="radio" name="TRY" id="TRY">
+        <input type="radio" name="TRY" id="TRY" value="TRY">
         <label for="TRY">Turkish Lyra</label>
       </div>
       <h3>How much do you want to convert? (min 1)</h3>
@@ -29,7 +29,12 @@
         <input type="number" name="moneyAmount" id="moneyAmount" min="1" required>
         <label for="moneyAmount">USD</label>
       </div>
+      <button class="submit" id="calculator">Enter</button>
     </form>
+    <div class="outPut">
+      <p>You have</p>
+        <p class="convertedMoney"></p><p id="currencyType"></p>
+    </div>
   </div>
 </body>
 </html>
