@@ -7,14 +7,15 @@ export class ExchangeRate {
         jsonifiedResponse = await response.json();
       } else {
         jsonifiedResponse = false;
+        alert("Error calling API - please try again");
       }
       return jsonifiedResponse;
     } catch (error) {
       console.log('in the catch');
       return false;
     }
-    let amountWorth;
-    response.forEach
+    //let amountWorth;
+    //response.forEach
   }
   converter(dollarAmount, convertTo) {
     this.dollarAmount = dollarAmount;
@@ -30,6 +31,6 @@ export class ExchangeRate {
 
 }
 
-export function getMatchingKey(inputKey, response) {
+// export function getMatchingKey(inputKey, response) {
   
-}
+// }
